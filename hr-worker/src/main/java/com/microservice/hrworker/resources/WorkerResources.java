@@ -39,7 +39,9 @@ public class WorkerResources {
     @GetMapping(value = "/{id}")
     public ResponseEntity<Worker> findById(@PathVariable Long id) {
 
-        //try {Thread.sleep(3000L);} catch (InterruptedException e) {e.printStackTrace();}//
+        /* try {Thread.sleep(3000L);}
+        catch (InterruptedException e) {e.printStackTrace();}
+         */
 
         // TO PRINT THE NUMBER OF THE PORT THAT THE INSTANCE IS RUNNING
         logger.info("Port = " + env.getProperty("local.server.port"));
